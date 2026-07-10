@@ -21,8 +21,9 @@ public class Pharmacy {
         System.out.print("Enter Medicine Id:");
         id = sc.nextInt();
         sc.nextLine();
-        System.out.print("Enter Manufacturer:");
+        System.out.println("Enter Manufacturer:");
         mfname = sc.nextLine();
+		System.out.println(" ");
         
         for (int i = 0; i < count; i++) {
 

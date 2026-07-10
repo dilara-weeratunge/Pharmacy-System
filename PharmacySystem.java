@@ -21,6 +21,7 @@ public class PharmacySystem {
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
             sc.nextLine();
+			System.out.println(" ");
 
             switch (choice) {
                 case 1:
