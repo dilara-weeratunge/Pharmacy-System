@@ -18,6 +18,7 @@ public class PharmacySystem {
             System.out.println("3. Search Medicine");
             System.out.println("4. Sell Medicine");
             System.out.println("5. Exit");
+			System.out.println(" ");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
             sc.nextLine();
@@ -34,7 +35,7 @@ public class PharmacySystem {
                     //pharmacy.searchMedicine();
                     break;
                 case 4:
-                    //pharmacy.sellMedicine();
+                    pharmacy.sellMedicine();
                     break;
                 case 5:
                     System.out.println("Thank you for using EmarPharma.");
