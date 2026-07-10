@@ -58,4 +58,35 @@ public class Pharmacy {
             }
         }
     }
+	public void sellMedicine(){
+        System.out.println("----Medicine Sales Section----");
+        System.out.print("Enter Medicine Name:");
+        name = sc.nextLine();
+		sc.nextLine();
+        System.out.print("Enter Medicine Id:");
+        id = sc.nextInt();
+        sc.nextLine();
+
+        for(int i=0; i < count;i++) {
+            if (medicineId[i] == id) {
+                System.out.println("Medicine is available");
+                System.out.println("Available quantity: " + medicineQuantity[i]);
+                System.out.print("Enter the amount to sell:");
+                quantity = sc.nextInt();
+                found = true;
+
+                if (medicineQuantity[i] >= quantity) {
+                    System.out.println("Sale Successful");
+                    medicineQuantity[i] = medicineQuantity[i] - quantity;
+                    System.out.println("Remaining Quantity:" + medicineQuantity[i]);
+                } else {
+                    System.out.println("Insufficient Stocks");
+                }
+                break;
+            }
+        }
+            if (found == false){
+                System.out.println("Medicine is not available");
+            }
+    }
 }
