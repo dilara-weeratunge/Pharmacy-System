@@ -12,7 +12,7 @@ public class PharmacySystem {
         do {
 
             System.out.println("--MAIN MENU--");
-            System.out.println("1. Add Medicine");
+            System.out.println("1. Update Medicines");
             System.out.println("2. Display Medicines");
             System.out.println("3. Search Medicine");
             System.out.println("4. Sell Medicine");
@@ -24,13 +24,13 @@ public class PharmacySystem {
 
             switch (choice) {
                 case 1:
-                    pharmacy.addMedicine();
+                    pharmacy.updateMedicine();
                     break;
                 case 2:
                     pharmacy.displayMedicine();
                     break;
                 case 3:
-                    //pharmacy.searchMedicine();
+                    pharmacy.searchMedicine();
                     break;
                 case 4:
                     pharmacy.sellMedicine();
